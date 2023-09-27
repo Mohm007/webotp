@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="permissions-policy" content="otp-credentials=(self 'https://embedded.com')">
     <title>Verify SMS Demo</title>
   </head>
 
@@ -14,9 +15,11 @@
         <input type="text" autocomplete="one-time-code" inputmode="numeric" name="one-time-code" style="height: 30px" required/>
         <br><br>
         <input type="submit" value="Submit">
+        <iframe src="https://embedded.com/..." allow="otp-credentials"> ... </iframe>
+
     </form>
 
-    <script type="text/javascript"  src="./index.js"></script>
+    <script type="text/javascript"  src="/index.js"></script>
   </div>
   </body>
   
