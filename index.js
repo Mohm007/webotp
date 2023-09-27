@@ -6,7 +6,7 @@ if ("OTPCredential" in window) {
     //   if (!input) return;
     //   // Set up an AbortController to use with the OTP request
        const ac = new AbortController();
-    //   const form = input.closest("form");
+       const form = input.closest("form");
     //   if (form) {
     //     // Abort the OTP request if the user attempts to submit the form manually
     //     form.addEventListener("submit", (e) => {
