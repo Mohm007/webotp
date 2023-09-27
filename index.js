@@ -23,7 +23,7 @@ if ("OTPCredential" in window) {
           // When the OTP is received by the app client, enter it into the form
           // input and submit the form automatically
           input.value = otp.code;
-          console.log("checking");
+          console.log("otp block executed");
           if (form) form.submit();
         })
         .catch((err) => {
@@ -32,4 +32,4 @@ if ("OTPCredential" in window) {
     });
   }
  
-//console.log("checking");
+console.log("checking");
