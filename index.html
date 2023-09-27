@@ -9,15 +9,13 @@
     <div style="text-align: center;">
     <h1 style="background-color: blueviolet; color: aliceblue; text-align: center;">OTP Autofill Verification</h1>
 
-    <form action="/next.html" >
-        <button type="button" onclick="verify()">Verify-OTP</button><br><br>
+    <form action="/next.html" method="post">
         Enter OTP here:
-        <input id="fill" type="text" autocomplete="one-time-code" inputmode="numeric" name="one-time-code" style="height: 30px">
+        <input type="text" autocomplete="one-time-code" inputmode="numeric" name="one-time-code" style="height: 30px" required/>
         <br><br>
         <input type="submit" value="Submit">
     </form>
 
-    <!-- <input type="text" autocomplete="one-time-code" inputmode="numeric" style="height: 30px;"/> -->
     <script type="text/javascript"  src="/index.js"></script>
   </div>
   </body>

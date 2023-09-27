@@ -1,7 +1,5 @@
- fill= document.getElementById("fill");
+
 // Detect feature support via OTPCredential availability
-const verify= () => {
-    console.log(123);
 if ("OTPCredential" in window) {
     window.addEventListener("DOMContentLoaded", (e) => {
       const input = document.querySelector('input[autocomplete="one-time-code"]');
@@ -25,7 +23,6 @@ if ("OTPCredential" in window) {
           // When the OTP is received by the app client, enter it into the form
           // input and submit the form automatically
           input.value = otp.code;
-          fill.innerHTML = input.value;
           if (form) form.submit();
         })
         .catch((err) => {
@@ -33,5 +30,5 @@ if ("OTPCredential" in window) {
         });
     });
   }
- }
-//console.log("abc");
+ 
+console.log("abcd");
